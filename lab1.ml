@@ -201,7 +201,7 @@ Invalid_argument exception for instance.
 
 let rec max_list (lst : int list) : int =
   match lst with
-  | [] -> Match_failure("")
+  | [] -> []
   | hd::[] -> hd
   | hd::tl -> if hd < max_list tl then hd else max_list tl;;
   (*if hd < tl[0] then max_list tl else max_list hd::tl[1:];;
