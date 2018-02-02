@@ -204,7 +204,7 @@ let rec max_list (lst : int list) : int =
   | [] -> 0
   | hd::[] -> hd
   | hd::tl -> if hd < max_list tl then hd else max_list tl;;
-  (*if hd < tl[0] then max_list tl else max_list hd::tl[1:];;
+  (*if hd < tl[0] then max_list tl else max_list hd::tl[1:];;*)
 
 (*......................................................................
 Exercise 9: Define a function zip, that takes two int lists and
